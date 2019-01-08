@@ -2,32 +2,40 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nhóm 3 Codegym Huế - Bài tập 1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <table>
             <tr>
                     <th>Hello</th>
-                    <td></td>
+                    <td id="fieldName"></td>
             </tr>
             <tr>
                     <th>Age</th>
-                    <td></td>
+                    <td id="fieldAge"></td>
             </tr>
             <tr>
-                    <th>Intro</th>
-                    <td></td>
+                    <th>Genre</th>
+                    <td ><input id="fieldGenre" type="checkbox" />Male</td>
             </tr>
                 
     </table>
-    <!-- Các bạn code tạo button của bạn vào dưới này. Với id dạng bt_<tên của bạn> và value = tuổi theo mẫu dưới  -->
+    <!-- Các bạn code tạo button tên mình vào dưới này-->
 
 
-        <button id="bt_Danh" value="26">Danh</button>
-        <button id="bt_nhom3" value="26">Nhóm 3</button>
+        <button onclick="getPerson('Danh',26,true)">Danh</button>
+        <button onclick="getPerson('Danh Đạt Nhu Thắng',26,false)">Nhóm 3</button>
+
+        <script>
+
+                function getPerson(name, age, genre) {
+                        document.getElementById("fieldName").innerText = name;
+                        document.getElementById("fieldAge").innerText = age;
+                        document.getElementById("fieldGenre").checked = genre;
+                }
+
+
+
+        </script>
 </body>
 </html>
