@@ -10,34 +10,21 @@
 	<body>
 		<div class="container">
 			<div class="row">
-			<div class="col-sm-2">
-			</div>
-			
+			<div class="col-sm-2"> </div>
 			<div class="col-sm-8">
-			</div>
-				<canvas id="canvas" width="320" height="320" style="background-color: #333">
+				<label class="alert alert-success">Tạo trang HTML </label>
+				<h3 class="text-warning">Tên file TenNhom.html </h3>
+				<h3 class="text-primary">Trang HTML gồm </h3>
+				<label class="text-primary">Hello</label>
+				<label class="text-primary">Age</label>
+				<label class="text-primary">Agende</label>
+				<label class="text-primary"> Button : Mỗi thành viên nhóm tạo 1 button với tên button là tên mình + button tên nhóm </label>
 				
-				</canvas>
-			<div class="col-sm-2">
-			</div>
-			
-			</div>
-		</div>
-			<script type="text/javascript">
-				var canvas = document.getElementById("canvas");
-				var ctx = canvas.getContext("2d");
-				var radius = canvas.height / 2;
-				ctx.translate(radius, radius);
-				radius = radius * 0.90
-				drawClock();
+				<label class="text-primary"> Yêu cầu khi click button nào thì sẽ xuất hiện tên tuổi giới tính của người đó</label>
 				
-				//Draw Clock
-				function drawClock() {
-					ctx.arc(0, 0, radius, 0 , 2*Math.PI);
-					ctx.fillStyle = "white";
-					ctx.fill();
-				}
-			</script>
+				<label class="text-primary">Trường hợp click vào button tên nhóm thì tên là tên của 3 người cộng lại, tuổi là trung bình tuổi của nhóm, giới tính là Nữ</label>
+			</div>
+			<div class="col-sm-2"> </div>
 		
 	</body>
 </html>
