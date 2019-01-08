@@ -3,16 +3,91 @@
 <head>
 	<title></title>
 	<script src="file.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css" >
+   <link rel="stylesheet" type="text/css" href="filecss.css">
 </head>
 <body>
-	<p>Hello<input id="Hi"></p>
-	<p>Age<input id="age"></p>
-	<p>GioiTinh<input id="gt"></p>
-	<button onclick="khanh()">Khánh</button>
-
-	<p>Nhóm 1<input id="hello_nhom"></p>
-	<p>Tuổi trung bình của nhóm<input id="age_tb"></p>
-	<p>Giới Tính<input id="gioitinh"></p>
-	<button onclick="nhom1()">Nhóm 1</button>
+	<div class="container">
+		<div class="table">
+			<div class="row">
+				<div class="col-md-6">
+					<table>
+						<tr>
+							<th>Hello</th>
+							<th><input id="Hi"></th>
+						</tr>
+						<tr>
+							<th>Age</th>
+							<th><input id="age"></th>
+						</tr>
+						<tr>
+							<th>Gender</th>
+							<th><input type="text" id="gender"></th>
+						</tr>
+					</table>
+					<div class="enter">
+						<h5>Please Enter Gender before display result</h5>
+						<div class="row">
+							<div class="col-md-2">
+								<h5>Male</h5>
+							</div>
+							<div class="col-md-1">
+								<input type="checkbox" id="nam">
+							</div>
+							<div class="col-md-2">
+								<h5>Female</h5>
+							</div>
+							<div class="col-md-1">
+								<input type="checkbox" id="nu">
+							</div>
+						</div>
+					</div>
+					<div class="submit">
+						<button onclick="khanh()">Khánh</button>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<table>
+						<tr>
+							<th>Hello Groups</th>
+							<th><input id="Hi_groups"></th>
+						</tr>
+						<tr>
+							<th>Age Medium</th>
+							<th><input id="age_medium"></th>
+						</tr>
+						<tr>
+							<th>Genneral Gender</th>
+							<th><input type="text" id="genneral_gender"></th>
+						</tr>
+					</table>
+					<div class="enter">
+						<h5>Please Enter Genneral Gender Before Display Result</h5>
+						<div class="row">
+							<div class="col-md-2">
+								<h5>Male</h5>
+							</div>
+							<div class="col-md-1">
+								<input type="checkbox" id="male">
+							</div>
+							<div class="col-md-2">
+								<h5>Female</h5>
+							</div>
+							<div class="col-md-1">
+								<input type="checkbox" id="female">
+							</div>
+						</div>
+					</div>
+					<div class="submit">
+						<button onclick="GroupsOne()">Groups One</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="bootstrap4/js/jquery.min.js"></script>
+<script src="bootstrap4/js/bootstrap.min.js"></script> 
 </body>
 </html>
