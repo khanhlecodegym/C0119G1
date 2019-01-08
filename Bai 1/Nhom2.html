@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nhóm 2</title>
+    <title>Danh sách thành viên nhóm 2</title>
 </head>
 <body>
-
+<h2 align="center">DANH SÁCH THÀNH VIÊN NHÓM 2</h2>
+<table align="center" width="60%" >
+  <tr>
+    <th width="40%" align="right">Hello</th>
+    <td ><a id="name"></a></td>
+  </tr>
+  <tr>
+    <th  align="right">Age</th>
+    <td><a id="age"></a></td>
+  </tr>
+  <tr>
+    <th  align="right">Sex</th>
+    <td><a id="sex"></a></td>
+  </tr>
+</table>
+<div align="center">
+  <input onclick="changeMember('Hoàng Văn Huấn', 21, true)" type="submit" value="Huấn">
+  <input onclick="changeMember('Nguyễn Công Đạt', 25, true)" type="submit" value="Đạt">
+  <input onclick="changeMember('Lê Thanh Quang', 28, true)" type="submit" value="Quang">
+  <input onclick="changeMember('Đinh Viết Tuấn', 21, true)" type="submit" value="Tuấn">
+  <input onclick="changeMember('Huấn, Đạt, Quang, Tuấn', 21, 'Nam')" type="submit" value="Nhóm 2">
+</div>
+<script>
+  function changeMember(name, age, sex) {
+    document.getElementById('name').innerText = name;
+    document.getElementById('age').innerText = age;
+    if(sex)
+      document.getElementById('sex').innerText = "Nam";
+    else
+      document.getElementById('sex').innerText = "Nữ";
+  }
+</script>
 </body>
 </html>
